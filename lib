@@ -1,0 +1,17 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
+
+Window = Library.Main("Yor","RightAlt")
+
+local Home = Window.NewTab("Home")
+
+local Socials = Home.NewSection("Socials")
+
+local Discord = Socials.NewButton("Copy Discord Link",function()
+setclipboard("Discord")
+end)
+
+local Farms = Window.NewTab("Farms")
+local MainS = Farms.NewSection("Main Section")
+local MoneyFarm = MainS.NewToggle("Money",function(bool)
+-- code here
+end,false)
